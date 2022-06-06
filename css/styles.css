@@ -1,6 +1,6 @@
 
 /* importar fuentes */
-@import url("https://fonts.google.com/specimen/Open+Sans?query=open");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
 
 *,
 ::after,
@@ -14,7 +14,7 @@
     --ocean: hsl(183,86%,19%);
     --wave: hsl(187,30%,54%);
     --seafoam: hsl(192,40%,84%);
-    --gradient: linear-gradient (to right, var(--cyan-gradient), var(--blue-gradient));
+    --gradient: linear-gradient (to right, var(--wave), var(--ocean));
     --body-font: 'Open Sans', sans-serif;
     --heading-font: 'Raleway', sans-serif;
     --padding-container: 60px 0;
@@ -49,7 +49,7 @@ body{
     background-size: 100% 100px;
 }
 .hero *{
-    outline: 1px solid white;
+    /* outline: 1px solid white; */
 }
 
 .container{
