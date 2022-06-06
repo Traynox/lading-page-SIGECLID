@@ -1,3 +1,119 @@
+
+/* importar fuentes */
+@import url("https://fonts.google.com/specimen/Open+Sans?query=open");
+
+*,
+::after,
+::before{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --deep-aqua: hsl(189,100%,14%);
+    --ocean: hsl(183,86%,19%);
+    --wave: hsl(187,30%,54%);
+    --seafoam: hsl(192,40%,84%);
+    --gradient: linear-gradient (to right, var(--cyan-gradient), var(--blue-gradient));
+    --body-font: 'Open Sans', sans-serif;
+    --heading-font: 'Raleway', sans-serif;
+    --padding-container: 60px 0;
+}
+
+body{
+    font-family: var(--body-font);
+}
+
 .hero{
-    color: tomato;
+    background-color: var(--deep-aqua);
+    position: relative;
+}
+
+.hero__wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40%;
+    background-color: var(--deep-aqua);
+}
+
+.hero__wave::before{
+    content: "";
+    position: absolute;
+    top: -100px;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../images/bg-curvy-mobile.svg");
+    background-size: 100% 100px;
+}
+.hero *{
+    outline: 1px solid white;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+}
+
+.nav__logo{
+    width: 100px;
+}
+
+.nav__img{
+    width: 100px;
+    display: block;
+}
+
+.nav__link{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin-left: .8em; 
+}
+.nav__link:first-of-type{
+    margin-left: auto;
+}
+
+.hero__main{
+    color: white;
+    display: grid;
+    gap: 1.5em;
+    text-align: center;
+    position: relative;
+}
+.hero__img{
+    width: 100%;
+    display: block;
+}
+
+.hero__title{
+    margin-top: 1.5em;
+    font-family: var(--heading-font);
+}
+
+.hero__paragraph{
+    line-height: 1.5;
+    /* margin: 5em 0; */
+} 
+
+.hero__cta{
+    width: 250px;
+    padding: 1em 0;
+    border-radius: 2em;
+    background-image: var(--gradient);
+    color: white;
+    font-weight: bold;
+    place-self: center;
+    font-family: var(--heading-font);
+    text-decoration: none;
 }
