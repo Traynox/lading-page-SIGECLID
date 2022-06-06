@@ -14,7 +14,7 @@
     --ocean: hsl(183,86%,19%);
     --wave: hsl(187,30%,54%);
     --seafoam: hsl(192,40%,84%);
-    --gradient: linear-gradient (to right, var(--wave), var(--ocean));
+    --gradient: linear-gradient(to right, var(--wave), var(--deep-aqua));
     --body-font: 'Open Sans', sans-serif;
     --heading-font: 'Raleway', sans-serif;
     --padding-container: 60px 0;
@@ -35,7 +35,7 @@ body{
     left: 0;
     right: 0;
     height: 40%;
-    background-color: var(--deep-aqua);
+    background-color: var(--ocean);
 }
 
 .hero__wave::before{
@@ -48,6 +48,7 @@ body{
     background-image: url("../images/bg-curvy-mobile.svg");
     background-size: 100% 100px;
 }
+
 .hero *{
     /* outline: 1px solid white; */
 }
@@ -110,7 +111,7 @@ body{
     width: 250px;
     padding: 1em 0;
     border-radius: 2em;
-    background-image: var(--gradient);
+    background: var(--gradient);
     color: white;
     font-weight: bold;
     place-self: center;
