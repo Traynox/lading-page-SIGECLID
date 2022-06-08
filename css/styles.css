@@ -22,6 +22,7 @@
 
 body{
     font-family: var(--body-font);
+    background-color: var(--ocean);
 }
 
 .hero{
@@ -49,9 +50,9 @@ body{
     background-size: 100% 100px;
 }
 
-.hero *{
-    /* outline: 1px solid white; */
-}
+/*.hero *{
+ outline: 1px solid white; 
+}*/
 
 .container{
     width: 90%;
@@ -117,4 +118,8 @@ body{
     place-self: center;
     font-family: var(--heading-font);
     text-decoration: none;
+}
+
+.about{
+    color: rgb(253, 251, 251);
 }
