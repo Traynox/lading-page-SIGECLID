@@ -121,5 +121,27 @@ body{
 }
 
 .about{
-    color: rgb(253, 251, 251);
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+}
+
+.about *{
+    /*outline: 1px solid #fff;*/
+}
+
+.about__img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+.about__title{
+margin-top: 1.2em;
+margin-bottom: 1em;
+font-family: var(--heading-font);
 }
