@@ -98,7 +98,7 @@ body {
     width: 100%;
     display: block;
     margin: 0 auto;
-    max-width: 700px;
+    max-width: 600px;
 }
 
 .hero__title {
@@ -157,8 +157,9 @@ body {
 
 .productive__img {
     width: 100%;
+    display:block;
     margin: 0 auto;
-    max-width: 700px;
+    max-width: 600px;
 
 }
 
@@ -250,7 +251,7 @@ body {
 /*css Damaris */
 
 .join{
-    background-image: linear-gradient(#07575B 50%, #66A5AD 50%);
+    background-image: linear-gradient(#07575B 50%, #27808b 50%);
     color: #fff;
     padding: 60px 0;
 }
@@ -295,7 +296,7 @@ body {
 
 
 .footer{
-    background-color: #66A5AD;
+    background-color: var(--blue-footer);
     color: #fff;
     
 }
@@ -303,15 +304,14 @@ body {
 .footer__items{
     display: grid;
    gap: 1em;
-   padding-left: 30px;
+  
   
 }
 .footer__logo{
-    width: 100px;
-    height: 100px;
+    width: 150px;
     display: block;
     margin-bottom: 2em;
-    padding-left: 20px;
+   
 
 }
 
@@ -343,13 +343,12 @@ margin-bottom: 1em;
 .footer__social{
     margin-top: 2em;
    margin: 0 auto;
-   padding-bottom: 25px;
+   
 }
 
 .footer__media{
 width: 50px;
 height: 50px;
-font-size: large;
 justify-content: center;
 align-items: center;
 color: #fff;
@@ -367,4 +366,78 @@ margin-right: 20px;
     .hero__title{
         font-size: 2.5rem
     }
+
+    .hero__wave::before {
+
+        background-image: url("../images/bg-curvy-desktop.svg");
+    }
+
+    .about {
+   
+        flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: space-evenly;
+    }
+
+    .about__item{
+        width: 40%;
+    }
+
+    .productive {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .productive__title {
+        font-size: 2rem;
+        margin-bottom: .6em;
+    }
+
+    .card {
+        flex-direction: row;
+       
+    }
+    .join__container{
+    width: 70%;
+    }
+
+    .join__title{
+        font-size: 2rem;
+        margin-bottom: .7em;
+    }
+
+    .join__form{
+      grid-template-columns: 1fr max-content;
+      
+    }
+
+    .footer__items{
+
+        grid-template-columns: 2fr 1fr max-content max-content 1fr;
+        gap:2em;
+      
+    }
+    
+    .footer__nav{
+        margin-top: 0;
+        display: grid;
+        gap: .8em;
+    }
+
+    .footer__media{
+        margin-bottom: 1em;
+    }
+    
+    
+    .footer__social{
+        margin-top: 0em;
+       
+    }
+    
+    .footer__media--last{
+    
+       margin-right: 0; 
+    
+    }
+
 }
