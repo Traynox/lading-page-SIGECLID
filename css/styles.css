@@ -12,10 +12,13 @@
     --blue-main: hsl(218, 28%, 13%);
     --blue-footer: hsl(216, 53%, 9%);
     --blue-testimonials: hsl(219, 30%, 18%);
-    --deep-aqua: hsl(189, 100%, 14%);
+
+
+    --deep-aqua: hsl(188, 100%, 14%);
     --ocean: hsl(183, 86%, 19%);
     --wave: hsl(187, 30%, 54%);
     --seafoam: hsl(192, 40%, 84%);
+
     --gradient: linear-gradient(to right, var(--wave), var(--deep-aqua));
     --body-font: 'Open Sans', sans-serif;
     --heading-font: 'Raleway', sans-serif;
@@ -28,7 +31,7 @@ body {
 }
 
 .hero {
-    background-color: var(--deep-aqua);
+    background-color: var(--wave);
     position: relative;
 }
 
@@ -254,13 +257,13 @@ body {
 /*css Damaris */
 
 .join {
-    background-image: linear-gradient(var(--blue-main) 50%, var(--blue-footer) 50%);
+    background-image: linear-gradient(var(--ocean) 50%, var(--deep-aqua) 50%);
     color: #fff;
     padding: 60px 0;
 }
 
 .join__container {
-    background-color: var(--blue-testimonials);
+    background-color: var(--wave);
     border-radius: 8px;
     padding-left: 1.5em;
     padding-right: 1.5em;
@@ -299,7 +302,7 @@ body {
 
 
 .footer {
-    background-color: var(--blue-footer);
+    background-color: var(--deep-aqua);
     color: #fff;
 
 }
