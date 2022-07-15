@@ -156,11 +156,17 @@ body {
     font-family: var(--heading-font);
 }
 
+
+
 .productive {
     color: #fff;
     display: grid;
     gap: 3em;
 }
+
+/* .productive__texts .rigth {
+    text-align: center;
+} */
 
 .productive__img {
     width: 100%;
@@ -422,7 +428,7 @@ body {
 .tabla {
 
     max-width: 30%;
-    height: 550px;
+    /* height: 550px; */
     margin: auto;
     background-color: var(--deep-aqua);
     /* border:1px solid var(--deep-aqua); */
@@ -458,7 +464,8 @@ body {
     display: inline-block;
     width: 150px;
     padding: 12px;
-    background: linear-gradient(to right, var(--ocean), var(--deep-aqua));;
+    background: linear-gradient(to right, var(--ocean), var(--deep-aqua));
+    ;
     /* background-image: var(--gradient); */
 
     text-decoration: none;
@@ -550,6 +557,7 @@ body {
     outline: none;
     background: transparent;
 }
+
 .login-box .user-box select {
     width: 100%;
     padding: 10px 0;
@@ -561,6 +569,7 @@ body {
     outline: none;
     background: transparent;
 }
+
 .login-box .user-box select option {
     color: rgb(255, 255, 255);
     background-color: var(--deep-aqua);
@@ -601,7 +610,7 @@ body {
 } */
 
 .login-box a:hover {
-    background:var(--deep-aqua);
+    background: var(--deep-aqua);
     color: #fff;
     box-shadow: 0 0 5px var(--deep-aqua),
         0 0 25px var(--deep-aqua),
@@ -696,3 +705,69 @@ body {
         bottom: 100%;
     }
 }
+
+/* List */
+.check-list {
+    margin: 20px 0;
+    /* padding-left: 1.2rem; */
+  }
+  
+  .check-list li {
+    position: relative;
+    list-style-type: none;
+    /* padding-left: 2.5rem; */
+    margin-bottom: 0.5rem;
+  }
+  
+  .check-list li:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 60px;
+      top: -2px;
+      width: 5px;
+      height: 11px;
+      border-width: 0 2px 2px 0;
+      border-style: solid;
+      border-color: #00a8a8;
+      transform-origin: bottom left;
+      transform: rotate(45deg);
+  }
+  
+  
+  /* Boilerplate stuff */
+  /* *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+  
+  html {
+    -webkit-font-smoothing: antialiased;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-size: 1.6rem; 
+    background-color: #efefef;
+    color: #324047
+  }
+  
+  html,
+  body,
+  section {
+    height: 100%;
+  }
+  
+  section {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+  }
+  
+  div {
+    margin: auto;
+  } */
