@@ -209,7 +209,7 @@ body {
     position: absolute;
     top: -30px;
     left: 0;
-    background-image: url("../images/cita.png");
+    /* background-image: url("../images/cita.png"); */
     width: 30px;
     height: 40px;
     background-size: contain;
