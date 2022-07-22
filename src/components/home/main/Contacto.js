@@ -5,7 +5,7 @@ const Contacto = () => {
         <section className="join">
             <div className="join__container container">
                 <div className="login-box">
-                    <h2>CONTACTANOS</h2>
+                    <h2>CONTACTO</h2>
                     <form>
                         <div className="user-box">
                             <input type="text" name="" required="" />

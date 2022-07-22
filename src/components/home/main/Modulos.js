@@ -5,7 +5,7 @@ const Modulos = () => {
         <>
             <section className="productive container">
                 <figure className="productive__picture">
-                    <img src={require("../../images/moduloTratamientos.jpeg")} className="productive__img" />
+                    <img src={require("../../../images/moduloTratamientos.jpeg")} className="productive__img" />
                 </figure>
 
                 <div className="productive__texts">
@@ -31,7 +31,7 @@ const Modulos = () => {
 
                 </div>
                 <figure className="productive__picture">
-                    <img src={require("../../images/moduloEmpleados.jpeg")} className="productive__img" />
+                    <img src={require("../../../images/moduloEmpleados.jpeg")} className="productive__img" />
                 </figure>
             </section>
         </>

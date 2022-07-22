@@ -1,13 +1,13 @@
-import FooterScreen from './components/footer/FooterScreen';
-import HeaderScreen from './components/header/HeaderScreen';
-import MainScreen from './components/main/MainScreen';
+import { Provider } from 'react-redux';
 import './css/styles.css';
+import AppRouter from './routers/AppRouter';
+import { store } from './store/store';
 function App() {
   return (
     <div className="App">
-      <HeaderScreen />
-      <MainScreen />
-      <FooterScreen />
+      <Provider store={store}>
+        <AppRouter />
+      </Provider>
     </div>
   );
 }

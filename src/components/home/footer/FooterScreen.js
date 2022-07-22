@@ -1,12 +1,12 @@
 import React from 'react'
-import fb from "../../images/fb.svg";
-import twitter from"../../images/twitter.svg";
-import insta from "../../images/instagram.svg";
+import fb from "../../../images/fb.svg";
+import twitter from"../../../images/twitter.svg";
+import insta from "../../../images/instagram.svg";
 const FooterScreen = () => {
     return (
         <footer className="footer">
             <section className="footer__container container">
-                <img src={require("../../images/logo_1.png")} className="footer__logo" />
+                <img src={require("../../../images/logo_1.png")} className="footer__logo" />
 
                 <div className="footer__items">
 

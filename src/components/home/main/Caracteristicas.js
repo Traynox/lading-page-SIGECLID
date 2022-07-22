@@ -1,8 +1,8 @@
 import React from 'react'
-import icon_acces from "../../images/icon-access-anywhere.svg";
-import icon_security from "../../images/icon-security.svg";
-import icon_collaboration from "../../images/icon-collaboration.svg";
-import icon_any_file from "../../images/icon-any-file.svg";
+import icon_acces from "../../../images/icon-access-anywhere.svg";
+import icon_security from "../../../images/icon-security.svg";
+import icon_collaboration from "../../../images/icon-collaboration.svg";
+import icon_any_file from "../../../images/icon-any-file.svg";
 const Caracteristicas = () => {
     return (
         <section className="about container">
