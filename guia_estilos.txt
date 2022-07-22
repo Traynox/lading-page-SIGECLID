@@ -1,7 +1,0 @@
-
-colores
-
---deep-aqua: #003B46
---ocean: #07575B
---wave: #66A5AD
---seafoam: #C4DFE6
