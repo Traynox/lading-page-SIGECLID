@@ -4,6 +4,7 @@ import Planes from './Planes';
 import Modulos from './Modulos';
 import Caracteristicas from './Caracteristicas';
 import Contacto from './Contacto';
+import Preguntas from './preguntasFrecuentes/Preguntas';
 
 const MainScreen = () => {
     return (
@@ -15,7 +16,7 @@ const MainScreen = () => {
             <Planes />
 
             <Contacto />
-
+            <Preguntas />
         </main>
     )
 }

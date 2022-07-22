@@ -1,12 +1,15 @@
 import * as React from 'react';
 import Review from './Review';
 import { Elements, CardElement, useElements, useStripe } from '@stripe/react-stripe-js';
-import { loadStripe } from '@stripe/stripe-js';
+import { loadStripe } from '@stripe/stripe-js/pure';
 import { Box, Button, Divider, Typography } from '@mui/material';
 import { useSelector } from 'react-redux'
 import { useDispatch } from 'react-redux'
 import axios from 'axios';
-import { setMensajeConfirmacion } from '../../actions/checkout';
+import {  setMensajeConfirmacion } from '../../actions/checkout';
+import { store } from '../../actions/usuario';
+import enviarCorreo from '../../firebase/enviarCorreo';
+
 
 
 
@@ -33,6 +36,8 @@ const card_element = {
 };
 const FormularioPago = ({ handleNext, handleBack }) => {
   const { producto } = useSelector((state) => state.cesta);
+  const { datosPersonales } = useSelector((state) => state.checkout);
+
   const dispatch = useDispatch();
   const stripe = useStripe();
   const elements = useElements();
@@ -48,11 +53,16 @@ const FormularioPago = ({ handleNext, handleBack }) => {
       try {
         const { data } = await axios.post("http://localhost:3001/api/checkout", {
           id,
-          amount: producto[0].dolar * 100
+          amount: producto[0].precio * 100
         });
         dispatch(setMensajeConfirmacion(data));
         handleNext();
         console.log(data);
+        if (data.mensaje == "Pago Exitoso") {
+          dispatch(store());
+          enviarCorreo(datosPersonales[0].name, datosPersonales[0].nombre, datosPersonales[0].email, datosPersonales[0].id_plan);
+       
+        }
       } catch (error) {
         console.log(error);
         dispatch(setMensajeConfirmacion(error));
@@ -78,7 +88,7 @@ const FormularioPago = ({ handleNext, handleBack }) => {
           variant="contained"
           sx={{ mt: 3, ml: 1 }}
         >
-          Pagar ₡ {producto[0].precio}
+          Pagar $ {producto[0].precio}
         </Button>
       </Box>
     </form>

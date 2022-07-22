@@ -17,6 +17,11 @@ export const checkoutReducer = (state = initialState, action) => {
                 ...state,
                 mensaje: action.payload
             }
+        case types.setCheckout:
+            return {
+                datosPersonales: [],
+                mensaje: ""
+            }
         default:
             return state;
     }

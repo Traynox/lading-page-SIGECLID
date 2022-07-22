@@ -428,8 +428,8 @@ body {
 
 .tabla {
 
-    max-width: 30%;
-    /* height: 550px; */
+    max-width: 40%;
+    height: 550px;
     margin: auto;
     background-color: var(--deep-aqua);
     /* border:1px solid var(--deep-aqua); */
@@ -460,15 +460,18 @@ body {
     display: block;
     margin-bottom: 20px;
 }
-
+.funcionalidad{
+    height: 150px;
+}
 .boton {
+    border: none;
     display: inline-block;
     width: 150px;
     padding: 12px;
     background: linear-gradient(to right, var(--ocean), var(--deep-aqua));
     ;
     /* background-image: var(--gradient); */
-
+    cursor: pointer;
     text-decoration: none;
     color: white;
     border-radius: 100px;
@@ -559,22 +562,16 @@ body {
     background: transparent;
 }
 
-.login-box .user-box select {
+.login-box .user-box textarea {
+    resize: none;
     width: 100%;
-    padding: 10px 0;
+    padding: 10px 10px;
     font-size: 16px;
     color: #fff;
     margin-bottom: 30px;
-    border: none;
-    border-bottom: 1px solid #fff;
+    border: 1px solid #fff;
     outline: none;
     background: transparent;
-}
-
-.login-box .user-box select option {
-    color: rgb(255, 255, 255);
-    background-color: var(--deep-aqua);
-    border: none;
 }
 
 .login-box .user-box label {
@@ -711,33 +708,33 @@ body {
 .check-list {
     margin: 20px 0;
     /* padding-left: 1.2rem; */
-  }
-  
-  .check-list li {
+}
+
+.check-list li {
     position: relative;
     list-style-type: none;
     /* padding-left: 2.5rem; */
     margin-bottom: 0.5rem;
-  }
-  
-  .check-list li:before {
-      content: '';
-      display: block;
-      position: absolute;
-      left: 60px;
-      top: -2px;
-      width: 5px;
-      height: 11px;
-      border-width: 0 2px 2px 0;
-      border-style: solid;
-      border-color: #00a8a8;
-      transform-origin: bottom left;
-      transform: rotate(45deg);
-  }
-  
-  
-  /* Boilerplate stuff */
-  /* *,
+}
+
+.check-list li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 60px;
+    top: -2px;
+    width: 5px;
+    height: 11px;
+    border-width: 0 2px 2px 0;
+    border-style: solid;
+    border-color: #00a8a8;
+    transform-origin: bottom left;
+    transform: rotate(45deg);
+}
+
+
+/* Boilerplate stuff */
+/* *,
   *:before,
   *:after {
     box-sizing: border-box;

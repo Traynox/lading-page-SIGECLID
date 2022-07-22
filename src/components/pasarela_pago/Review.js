@@ -14,16 +14,16 @@ export default function Review() {
             </Typography>
             <List disablePadding>
                 {producto.map((product) => (
-                    <ListItem key={product.nombre} sx={{ py: 1, px: 0 }}>
-                        <ListItemText primary={product.nombre} />
-                        <Typography variant="body2">₡ {product.precio}</Typography>
+                    <ListItem key={product.idPlan} sx={{ py: 1, px: 0 }}>
+                        <ListItemText primary={product.idPlan === 1 ? 'Basico' : 'Premium'} />
+                        <Typography variant="body2">$ {product.precio}</Typography>
                     </ListItem>
                 ))}
                 {producto.map((product) => (
-                    <ListItem key={product.nombre} sx={{ py: 1, px: 0 }}>
+                    <ListItem key={product.idPlan} sx={{ py: 1, px: 0 }}>
                         <ListItemText primary="Total" />
                         <Typography variant="subtitle1" sx={{ fontWeight: 700 }}>
-                        ₡ {product.precio}
+                            $ {product.precio}
                         </Typography>
                     </ListItem>
                 ))}

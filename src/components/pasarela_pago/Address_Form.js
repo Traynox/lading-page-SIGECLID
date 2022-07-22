@@ -18,30 +18,23 @@ export default function Address_Form({ handleNext }) {
       </Typography>
       <FormProvider {...methods}>
         <form onSubmit={methods.handleSubmit(data => {
-          dispatch(setDatosPersonales(data));
+          const datos = { ...data, id_plan: 1, id_rol: 1 }
+          dispatch(setDatosPersonales(datos));
           handleNext();
         })}>
           <Grid container spacing={3}>
             <Grid item xs={12} sm={6}>
               <DatosInput
                 required
-                name="firstName"
-                label="Nombre"
+                name="name"
+                label="Nombre Usuario"
               />
             </Grid>
             <Grid item xs={12} sm={6}>
               <DatosInput
                 required
-                name="lastName"
-                label="Apellidos"
-              />
-            </Grid>
-            <Grid item xs={12} sm={6}>
-              <DatosInput
-                required
-                name="cedula"
-                label="Cedula"
-                type="number"
+                name="nombre"
+                label="Nombre Empresa"
               />
             </Grid>
             <Grid item xs={12} sm={6}>
@@ -54,7 +47,7 @@ export default function Address_Form({ handleNext }) {
             <Grid item xs={12} sm={6}>
               <DatosInput
                 required
-                name="phone"
+                name="telefono"
                 label="# Telefono"
                 type="number"
               />
@@ -62,24 +55,19 @@ export default function Address_Form({ handleNext }) {
             <Grid item xs={12} sm={6}>
               <DatosInput
                 required
-                name="canton"
-                label="Canton"
+                name="password"
+                label="Contraseña"
+                type="password"
               />
             </Grid>
             <Grid item xs={12} sm={6}>
               <DatosInput
                 required
-                name="provincia"
-                label="Provincia"
+                name="direccion"
+                label="Direccion"
               />
             </Grid>
-            <Grid item xs={12} sm={6}>
-              <DatosInput
-                required
-                name="pais"
-                label="Pais"
-              />
-            </Grid>
+
           </Grid>
           <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
             <Button sx={{ mt: 3, ml: 1 }}

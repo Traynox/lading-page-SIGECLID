@@ -8,3 +8,6 @@ export const setMensajeConfirmacion = (mensaje) => ({
     type: types.setMensaje,
     payload: mensaje
 });
+export const setCheckout = () => ({
+    type: types.setCheckout
+});
