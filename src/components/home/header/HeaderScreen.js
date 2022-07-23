@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from './Navbar'
+import { scroll } from '../../../helpers/scroll'
 
 const HeaderScreen = () => {
     return (
@@ -12,8 +12,9 @@ const HeaderScreen = () => {
                 <h1 className="hero__title">Sistema de Gestión para Clínicas Dentales</h1>
                 <p className="hero__paragraph">Ayuda a las prácticas dentales pequeñas y grandes a optimizar cada aspecto de sus
                     tareas administrativas y clínicas diarias, desde la agenda hasta el procesamiento de los tratamientos
-                    dentales. Con un manejo intuitivo que lo hace amigable a su uso.</p>
-                <a href="#3" className="hero__cta">Empecemos</a>
+                    dentales. Con un manejo intuitivo que lo hace amigable a su uso. Te ofrecemos un conjunto de herramientas
+                    modernas para ayudarte a gestionar de manera perfecta tu consultorio.</p>
+                <button href="#3" className="hero__cta" onClick={() => { scroll(3400) }}>Empecemos</button>
             </section>
 
         </header>

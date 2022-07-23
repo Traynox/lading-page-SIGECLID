@@ -59,7 +59,7 @@ const Planes = () => {
                         dispatch(setProducto({ idPlan: 2, precio: 35 }));
                     }}
                 >
-                    Premium
+                    Pagar
                 </Link>
                 {/* <a href="3" className="boton">Pagar</a> */}
             </div>

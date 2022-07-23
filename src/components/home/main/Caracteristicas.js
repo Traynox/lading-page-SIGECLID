@@ -12,9 +12,9 @@ const Caracteristicas = () => {
                     <img src={icon_acces} alt="about__img" />
                 </figure>
 
-                <h3 className="about__title">Orden y control de las citas</h3>
-                <p className="about__paragraph">Le solucionamos la tediosa gestion de la agenda manejando las citas de cada
-                    doctor</p>
+                <h3 className="about__title">Fácil de utilizar</h3>
+                <p className="about__paragraph">La herramienta más amigable y sencilla para odontólogos, que además cuenta con un gran
+                    equipo humano de soporte y postventa disponible para ti, para siempre.</p>
 
             </article>
 
@@ -35,7 +35,8 @@ const Caracteristicas = () => {
                 </figure>
 
                 <h3 className="about__title">Ahorro y optimizacion del tiempo</h3>
-                <p className="about__paragraph">Aquí el textito</p>
+                <p className="about__paragraph">Cuenta con funcionalidades que te permiten optimizar tiempos de atención y administración,
+                    desde la generación de presupuestos y confirmación de citas automáticas.</p>
 
             </article>
 
@@ -44,8 +45,9 @@ const Caracteristicas = () => {
                     <img src={icon_any_file} alt="about__img" />
                 </figure>
 
-                <h3 className="about__title">Access your files anywhere</h3>
-                <p className="about__paragraph">Aquí el textito</p>
+                <h3 className="about__title">Nuevas maneras de crecer</h3>
+                <p className="about__paragraph">Posee innovadoras funcionalidades, que te permiten estar más cerca de tus pacientes, fidelizándolos
+                    y diferenciando tu calidad de servicio respecto a tus colegas.</p>
 
             </article>
 

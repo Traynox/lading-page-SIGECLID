@@ -71,6 +71,7 @@ body {
     background-color: var(--wave);
     display: flex;
     align-items: center;
+    
 }
 
 .nav__logo {
@@ -83,10 +84,20 @@ body {
 }
 
 .nav__link {
-    display: inline-block;
+    /* display: inline-block; */
     color: white;
     text-decoration: none;
     margin-left: .8em;
+    border: 0;
+    background-color: inherit;
+    cursor: pointer;
+    padding:.5em 1em;
+    border-radius: 5px;
+}
+.nav__link:hover {
+    
+    background-color: var(--ocean);
+ 
 }
 
 .nav__link:first-of-type {
@@ -120,6 +131,7 @@ body {
 }
 
 .hero__cta {
+    border: none;
     width: 250px;
     padding: 1em 0;
     border-radius: 2em;
@@ -129,6 +141,7 @@ body {
     place-self: center;
     font-family: var(--heading-font);
     text-decoration: none;
+    cursor: pointer;
 }
 
 .about {
@@ -218,7 +231,10 @@ body {
     background-position: center;
     z-index: -1;
 }
-
+.about__paragraph{
+    letter-spacing: 1px;
+    text-align: justify;
+}
 /*css Damaris */
 
 .join {
